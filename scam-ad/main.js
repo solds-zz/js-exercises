@@ -5,10 +5,10 @@ function doAnimation() {
   var divAdvert = document.getElementById("divAdvert");
   var currentLeft = divAdvert.offsetLeft;
   if (currentLeft == 0) {
-  	increment = 2;
+    increment = 2;
   }
   if (currentLeft >= direction) {
-  	increment = -2;
+    increment = -2;
   }
   var newLocation = currentLeft + increment;
   divAdvert.style.left = newLocation + "px";
@@ -16,8 +16,8 @@ function doAnimation() {
 }
 
 function colorChange() {
-   var divAdvert = document.getElementById("divAdvert");
-   divAdvert.style.color = "blue";
+  var divAdvert = document.getElementById("divAdvert");
+  divAdvert.style.color = "blue";
 }
 
 setInterval(doAnimation, 10);

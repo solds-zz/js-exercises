@@ -4,8 +4,7 @@ while (notValid) {
   var birth = prompt("Enter your date of birth (MM/DD/YYYY): ");
   if (validInput.test(birth)) {
     notValid = false;
-  }
-  else {
+  } else {
     alert("You did not enter a valid date.");
   }
 }
